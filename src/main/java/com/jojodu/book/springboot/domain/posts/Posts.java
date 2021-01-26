@@ -1,5 +1,6 @@
 package com.jojodu.book.springboot.domain.posts;
 
+import com.jojodu.book.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -12,7 +13,7 @@ import javax.persistence.*;
 // JPA 어노테이션
 // @Entity: 테이블과 링크될 클래스임을 나타냄. 클래스의 카멜케이스 이름을 언더스코어 네이밍으로 테이블 이름을 매칭.
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity {
     // @Id: 해당 테이블의 PK필드를 나타냄.
     // @GeneratedValue: PK의 생성 규칙을 나타냄. 스프링 부트 2.0에서는 GenerationType.IDENTITY를 추가해야 auto_increment가 됨.
     @Id
