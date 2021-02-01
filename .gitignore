@@ -1,3 +1,10 @@
-# Project exclude paths
+# Created by .ignore support plugin (hsz.mobi)
 .gradle
 .idea
+/classes/
+/test-classes/
+.classpath
+.project
+.settings/
+
+application-oauth.properties
